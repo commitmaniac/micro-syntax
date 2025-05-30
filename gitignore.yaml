@@ -1,0 +1,16 @@
+# SPDX-License-Identifier: MIT
+# SPDX-FileCopyrightText: Copyright (c) 2025 commitmaniac
+
+filetype: gitignore
+
+detect:
+  filename: "\\.gitignore$"
+
+rules:
+  - statement: "\\[.*\\]"
+  - symbol.operator: "\\*|\\!|\\?|\\~"
+  - symbol.brackets: "\\[|\\]"
+  - comment.line:
+      start: "#"
+      end: "$"
+      rules: []

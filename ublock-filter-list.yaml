@@ -1,0 +1,25 @@
+# SPDX-License-Identifier: MIT
+# SPDX-FileCopyrightText: Copyright (c) 2025 commitmaniac
+
+filetype: ublock-filter-list
+
+# Only detect header, despite text files as clear extension standard
+detect:
+  header: "^(\\[.*\\]|\\!).*$"
+
+rules:
+  - identifier: "^([^\\#]*)\\#"
+  - preproc: "\\#|\\@|\\|"
+  - symbol.operator: "\\>"
+  - symbol.brackets: "[()]"
+  - constant.string:
+      start: "\""
+      end: "\""
+      skip: "\\\\."
+      rules: []
+
+  # uBlockOrigin doesn't support inline comments
+  - comment.line:
+      start: "^\\!"
+      end: "$"
+      rules: []

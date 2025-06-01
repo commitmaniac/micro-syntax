@@ -10,6 +10,14 @@ rules:
   - statement: "\\[.*\\]"
   - symbol.operator: "\\*|\\!|\\?|\\~"
   - symbol.brackets: "\\[|\\]"
+
+  # Support patterns that include hashtags while
+  # maintaining support for inline comments
+  - symbol.operator:
+      start: "\\\\"
+      end: "#"
+      rules: []
+
   - comment.line:
       start: "#"
       end: "$"

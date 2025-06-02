@@ -13,6 +13,10 @@ rules:
   - preproc: "^(Trusted|Signed-(B|b)y|Check-Valid-Until):?"
   - preproc: "^Valid-Until-(Min|Max):?"
 
+  # Testing (trixie) flags
+  - preproc: "^(Check-Date|Date-Max-Future):?"
+  - preproc: "^(InRelease-Path|Snapshot):?"
+
   # RepoLib-specific option fields
   - preproc: "^(X-Repolib-Name):?"
 

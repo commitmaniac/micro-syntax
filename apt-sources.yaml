@@ -1,0 +1,23 @@
+# SPDX-License-Identifier: MIT
+# SPDX-FileCopyrightText: Copyright (c) 2025 commitmaniac
+
+filetype: apt-sources
+
+detect:
+  filename: "\\.sources$"
+
+rules:
+  - preproc: "^(Types|URIs|Suites|Components):?"
+  - preproc: "^(Architectures|Languages|Targers|PDiffs|By-Hash):?"
+  - preproc: "^Allow-(Insecure|Weak|Downgrade-To-Insecure):?"
+  - preproc: "^(Trusted|Signed-(B|b)y|Check-Valid-Until):?"
+  - preproc: "^Valid-Until-(Min|Max):?"
+
+  # RepoLib-specific option fields
+  - preproc: "^(X-Repolib-Name):?"
+
+  # Debian RFC 822 doesn't support inline comments
+  - comment.line:
+      start: "^#"
+      end: "$"
+      rules: []

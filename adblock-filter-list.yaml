@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: MIT
 # SPDX-FileCopyrightText: Copyright (c) 2025 commitmaniac
 
-filetype: ublock-filter-list
+filetype: adblock-filter-list
 
 # Only detect header, despite text files as clear extension standard
 detect:
@@ -18,7 +18,7 @@ rules:
       skip: "\\\\."
       rules: []
 
-  # uBlockOrigin doesn't support inline comments
+  # Most filter lists don't support inline comments
   - comment.line:
       start: "^\\!"
       end: "$"

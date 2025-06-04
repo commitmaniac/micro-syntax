@@ -7,9 +7,9 @@ detect:
   filename: "\\.gitignore$"
 
 rules:
-  - statement: "\\[.*\\]"
+  - preproc: "\\[.*\\]"
   - symbol.operator: "\\*|\\!|\\?|\\~"
-  - symbol.brackets: "\\[|\\]"
+  - symbol.brackets: "\\[|\\]|\\/"
 
   # Support patterns that include hashtags while
   # maintaining support for inline comments

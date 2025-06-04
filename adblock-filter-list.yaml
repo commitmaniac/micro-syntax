@@ -20,6 +20,6 @@ rules:
 
   # Most filter lists don't support inline comments
   - comment.line:
-      start: "^\\!"
+      start: "^(\\!|\\#)"
       end: "$"
       rules: []

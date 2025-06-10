@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT
+# SPDX-FileCopyrightText: Copyright (c) 2025 commitmaniac
+
+filetype: editorconfig
+
+detect:
+  filename: "\\.editorconfig$"
+
+rules:
+  - include: "ini"
+  - constant.number: "[^-]\\d.*"

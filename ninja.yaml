@@ -1,0 +1,23 @@
+# SPDX-License-Identifier: MIT
+# SPDX-FileCopyrightText: Copyright (c) 2025 commitmaniac
+
+filetype: ninja
+
+detect:
+  filename: "\\.ninja$"
+
+rules:
+  - statement: "^(build|default|include|rule|subninja)"
+  - statement: "\\b(command|depfile|deps|description)\\b"
+  - statement: "\\b(depth|dyndep|generator|msvc_deps_prefix)\\b"
+  - statement: "\\b(in_newline|pool|restat|rspfile(_content))\\b"
+
+  # Variables
+  - identifier: "\\$\\{?[A-Za-z_]*\\}?"
+  - symbol.operator: "\\=|\\:|\\|\\|"
+
+  # Ninja doesn't support inline comments
+  - comment.line:
+      start: "^#"
+      end: "$"
+      rules: []

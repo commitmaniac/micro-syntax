@@ -8,4 +8,4 @@ detect:
 
 rules:
   - include: "ini"
-  - constant.number: "[^-]\\d.*"
+  - constant.number: "[^-]\\d{1,}"

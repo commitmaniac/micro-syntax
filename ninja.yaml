@@ -16,6 +16,11 @@ rules:
   - identifier: "\\$\\{?[A-Za-z_]*\\}?"
   - symbol.operator: "\\=|\\:|\\|\\|"
 
+  - constant.string:
+      start: "\""
+      end: "\""
+      rules: []
+
   # Ninja doesn't support inline comments
   - comment.line:
       start: "^#"

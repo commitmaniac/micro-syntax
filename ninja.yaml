@@ -10,7 +10,7 @@ rules:
   - statement: "^(build|default|include|rule|subninja)"
   - statement: "\\b(command|depfile|deps|description)\\b"
   - statement: "\\b(depth|dyndep|generator|msvc_deps_prefix)\\b"
-  - statement: "\\b(in_newline|pool|restat|rspfile(_content))\\b"
+  - statement: "\\b(in_newline|pool|restat|rspfile(_content)?)\\b"
 
   # Variables
   - identifier: "\\$\\{?[A-Za-z_]*\\}?"

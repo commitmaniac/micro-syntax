@@ -13,7 +13,7 @@ rules:
   - statement: "\\b(in_newline|pool|restat|rspfile(_content)?)\\b"
 
   # Variables
-  - identifier: "\\$\\{?[A-Za-z_]*\\}?"
+  - identifier: "\\$\\{?[A-Za-z_]+\\}?"
   - symbol.operator: "\\=|\\:|\\|\\|"
 
   - constant.string:

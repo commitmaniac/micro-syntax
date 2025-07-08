@@ -5,6 +5,7 @@ Collection of syntax highlighting support files for the
 
 ## Supported filetypes
 
+- [gitattributes]
 - [gitignore]
 - [uBlock Filter Lists]
 - [APT sources]
@@ -16,6 +17,7 @@ Collection of syntax highlighting support files for the
 MIT
 
 [micro]: https://github.com/zyedidia/micro
+[gitattributes]: https://git-scm.com/docs/gitattributes
 [gitignore]: https://git-scm.com/docs/gitignore
 [uBlock Filter Lists]: https://github.com/gorhill/uBlock/wiki/Static-filter-syntax
 [APT sources]: https://manpages.debian.org/bookworm/apt/sources.list.5.en.html

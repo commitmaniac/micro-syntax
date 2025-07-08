@@ -1,0 +1,16 @@
+# SPDX-License-Identifier: MIT
+# SPDX-FileCopyrightText: Copyright (c) 2025 commitmaniac
+
+filetype: gitattributes
+
+detect:
+  filename: "\\.(git)?attributes$"
+
+rules:
+  - identifier: "[[:space:]][a-z-]{1,}(=)?"
+  - symbol.operator: "\\*|\\="
+  - constant.bool: "\\b(true|false)\\b"
+  - comment.line:
+      start: "#"
+      end: "$"
+      rules: []

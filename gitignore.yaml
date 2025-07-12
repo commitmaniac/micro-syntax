@@ -11,14 +11,9 @@ rules:
   - symbol.operator: "\\*|\\!|\\?|\\~"
   - symbol.brackets: "\\[|\\]|\\/"
 
-  # Support patterns that include hashtags while
-  # maintaining support for inline comments
-  - symbol.operator:
-      start: "\\\\"
-      end: "#"
-      rules: []
-
+  # Most ignore lists don't support inline comments
+  # See: https://github.com/Alhadis/language-etc/commit/54946457dc032cd520e5d7a24c626119281162eb
   - comment.line:
-      start: "#"
+      start: "^[[:space:]]?#"
       end: "$"
       rules: []

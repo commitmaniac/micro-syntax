@@ -8,7 +8,7 @@ detect:
 
 rules:
   - preproc: "\\[.*\\]"
-  - symbol.operator: "\\*|\\!|\\?|\\~"
+  - symbol.operator: "\\*|\\!|\\?|\\~|^\\\\#"
   - symbol.brackets: "\\[|\\]|\\/"
 
   # Most ignore lists don't support inline comments

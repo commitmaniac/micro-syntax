@@ -7,7 +7,7 @@ detect:
   filename: "(\\.|\\/)(git)?attributes$"
 
 rules:
-  - identifier: "[[:space:]][a-z-]{1,}(=)?"
+  - identifier: "[[:space:]][a-z-!]{1,}(=)?"
   - symbol.operator: "\\*|\\="
   - constant.bool: "\\b(true|false)\\b"
   - comment.line:

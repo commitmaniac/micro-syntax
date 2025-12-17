@@ -4,7 +4,7 @@
 filetype: editorconfig
 
 detect:
-  filename: "\\.editorconfig$"
+  filename: "(\\.)?editorconfig$"
 
 rules:
   - include: "ini"

@@ -7,10 +7,11 @@ detect:
   filename: "\\.ninja$"
 
 rules:
-  - statement: "^(build|default|include|rule|subninja)"
+  - statement: "^(build|default|include|pool|rule|subninja)"
   - statement: "^[[:space:]]+(command|depfile|deps|description)"
   - statement: "^[[:space:]]+(depth|dyndep|generator|msvc_deps_prefix)"
   - statement: "^[[:space:]]+(in_newline|pool|restat|rspfile(_content)?)"
+  - statement: "[[:space:]]+(phony)"
 
   # Variables
   - identifier: "\\$\\{?[A-Za-z0-9_-]+\\}?"

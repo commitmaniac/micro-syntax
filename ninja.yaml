@@ -13,8 +13,8 @@ rules:
   - statement: "^[[:space:]]+(in_newline|pool|restat|rspfile(_content)?)"
 
   # Variables
-  - identifier: "\\$\\{?[A-Za-z_]+\\}?"
-  - symbol.operator: "\\=|\\:|\\|\\|"
+  - identifier: "\\$\\{?[A-Za-z0-9_-]+\\}?"
+  - symbol.operator: "\\=|[[:space:]]\\$$|\\:|\\|"
 
   - constant.string:
       start: "\""

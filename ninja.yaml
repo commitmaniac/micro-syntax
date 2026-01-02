@@ -8,9 +8,9 @@ detect:
 
 rules:
   - statement: "^(build|default|include|rule|subninja)"
-  - statement: "\\b(command|depfile|deps|description)\\b"
-  - statement: "\\b(depth|dyndep|generator|msvc_deps_prefix)\\b"
-  - statement: "\\b(in_newline|pool|restat|rspfile(_content)?)\\b"
+  - statement: "^[[:space:]]+(command|depfile|deps|description)"
+  - statement: "^[[:space:]]+(depth|dyndep|generator|msvc_deps_prefix)"
+  - statement: "^[[:space:]]+(in_newline|pool|restat|rspfile(_content)?)"
 
   # Variables
   - identifier: "\\$\\{?[A-Za-z_]+\\}?"

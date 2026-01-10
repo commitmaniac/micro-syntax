@@ -3,6 +3,19 @@
 Collection of syntax highlighting support files for the
 [micro] editor
 
+## Quick start
+
+```console
+$ cat ~/.config/micro/settings.json
+{
+    ...
+    "pluginrepos": [
+        "https://raw.githubusercontent.com/commitmaniac/micro-syntax/refs/heads/master/repo.json"
+    ],
+}
+> plugin install palette
+```
+
 ## Supported filetypes
 
 - [gitattributes]

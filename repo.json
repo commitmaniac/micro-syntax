@@ -1,0 +1,15 @@
+[{
+  "Name": "palette",
+  "Description": "Collection of micro syntax files",
+  "Tags": ["syntax", "utility"],
+  "Website": "https://github.com/commitmaniac/micro-syntax",
+  "Versions": [
+    {
+      "Version": "1.2.0",
+      "Url": "https://github.com/commitmaniac/micro-syntax/archive/refs/tags/1.2.0.zip",
+      "Require": {
+        "micro": ">=2.0.1"
+      }
+    }
+  ]
+}]

@@ -20,6 +20,7 @@ $ cat ~/.config/micro/settings.json
 
 - [gitattributes]
 - [gitignore]
+- [hgignore]
 - [uBlock Filter Lists]
 - [APT sources]
 - [Ninja]
@@ -31,6 +32,7 @@ MIT
 [micro]: https://github.com/zyedidia/micro
 [gitattributes]: https://git-scm.com/docs/gitattributes
 [gitignore]: https://git-scm.com/docs/gitignore
+[hgignore]: https://mercurial-scm.org/help/topics/hgignore
 [uBlock Filter Lists]: https://github.com/gorhill/uBlock/wiki/Static-filter-syntax
 [APT sources]: https://manpages.debian.org/trixie/apt/sources.list.5.en.html
 [Ninja]: https://ninja-build.org/manual.html

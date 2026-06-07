@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT
+# SPDX-FileCopyrightText: Copyright (c) 2026 commitmaniac
+
+filetype: hgignore
+
+detect:
+  filename: "\\.hgignore$"
+
+rules:
+  - include: gitignore
+  - type: "^(syntax)"

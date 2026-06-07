@@ -8,7 +8,7 @@ detect:
 
 rules:
   - identifier: "[[:space:]][a-z-!]{1,}(=)?"
-  - symbol.operator: "\\*|\\="
+  - symbol.operator: "\\*|\\=|\\!"
   - constant.bool: "\\b(true|false)\\b"
   - comment.line:
       start: "#"

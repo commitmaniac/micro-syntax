@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: MIT
+# SPDX-FileCopyrightText: Copyright (c) 2026 commitmaniac
+
+filetype: git-revlist
+
+detect:
+  filename: "\\.git-blame-ignore-revs$"
+
+rules:
+  - identifier: "[A-Fa-f0-9]{40}"
+  - comment.line:
+      start: "#"
+      end: "$"
+      rules: []

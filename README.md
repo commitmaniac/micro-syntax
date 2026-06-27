@@ -23,6 +23,7 @@ $ cat ~/.config/micro/settings.json
 - [hgignore]
 - [uBlock Filter Lists]
 - [APT sources]
+- [Git Revision Lists]
 - [Ninja]
 
 ## License
@@ -35,4 +36,5 @@ MIT
 [hgignore]: https://mercurial-scm.org/help/topics/hgignore
 [uBlock Filter Lists]: https://github.com/gorhill/uBlock/wiki/Static-filter-syntax
 [APT sources]: https://manpages.debian.org/trixie/apt/sources.list.5.en.html
+[Git Revision Lists]: https://git-scm.com/docs/git-blame
 [Ninja]: https://ninja-build.org/manual.html

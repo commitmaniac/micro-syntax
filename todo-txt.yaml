@@ -1,0 +1,16 @@
+# SPDX-License-Identifier: MIT
+# SPDX-FileCopyrightText: Copyright (c) 2026 commitmaniac
+
+filetype: todo-txt
+
+detect:
+  filename: "(todo|done)\\.txt$"
+
+rules:
+  - constant.number: "\\b\\d{4}\\-\\d{2}\\-\\d{2}\\b"
+  - identifier: "\\+[A-Za-z0-9-_]+"
+  - preproc: "\\@[A-Za-z0-9-_]+"
+  - comment.line:
+      start: "^x\\s.+"
+      end: "$"
+      rules: []

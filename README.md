@@ -35,6 +35,7 @@ MIT
 [gitignore]: https://git-scm.com/docs/gitignore
 [hgignore]: https://mercurial-scm.org/help/topics/hgignore
 [uBlock Filter Lists]: https://github.com/gorhill/uBlock/wiki/Static-filter-syntax
+[todo.txt]: https://github.com/todotxt/todo.txt#todotxt-format-rules
 [APT sources]: https://manpages.debian.org/trixie/apt/sources.list.5.en.html
 [Git Revision Lists]: https://git-scm.com/docs/git-blame
 [Ninja]: https://ninja-build.org/manual.html

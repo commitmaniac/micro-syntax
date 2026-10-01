@@ -1,0 +1,22 @@
+# SPDX-License-Identifier: MIT
+# SPDX-FileCopyrightText: Copyright (c) 2026 commitmaniac
+
+filetype: mdoc
+
+detect:
+  filename: "\\.[1-9]$"
+  header: "\\.\\\\\""
+
+rules:
+  - identifier: "^\\.[A-Z][a-z]"
+  - identifier:
+      start: "^\\.(Sh|Dt)"
+      end: "$"
+      rules:
+        - preproc: "[[:space:]]([A-Z]+)"
+        - constant.number: "[1-8]"
+  - preproc: "\\b(Fl|Ar)\\b"
+  - comment.line:
+      start: "^\\.\\\\\""
+      end: "$"
+      rules: []

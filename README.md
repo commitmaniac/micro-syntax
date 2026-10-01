@@ -25,6 +25,7 @@ $ cat ~/.config/micro/settings.json
 - [APT sources]
 - [Git Revision Lists]
 - [Ninja]
+- [todo.txt]
 
 ## License
 

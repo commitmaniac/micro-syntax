@@ -10,6 +10,13 @@
       "Require": {
         "micro": ">=2.0.1"
       }
+    },
+    {
+      "Version": "1.3.0",
+      "Url": "https://github.com/commitmaniac/micro-syntax/archive/refs/tags/1.3.0.zip",
+      "Require": {
+        "micro": ">=2.0.1"
+      }
     }
   ]
 }]

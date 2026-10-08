@@ -16,6 +16,11 @@ rules:
         - preproc: "[[:space:]]([A-Z]+)"
         - constant.number: "[1-8]"
   - preproc: "\\b(Fl|Ar)\\b"
+  - constant.string:
+      start: "\""
+      end: "\""
+      rules:
+        - constant.specialChar: "\\\\."
   - comment.line:
       start: "^\\.\\\\\""
       end: "$"
